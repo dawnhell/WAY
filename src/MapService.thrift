@@ -5,7 +5,7 @@ include "types.thrift"
 * Service for working with map and pathes
 */
 
-service WayService {
+service MapService {
     /*
     * Adds new point to path
     */
