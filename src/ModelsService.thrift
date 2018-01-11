@@ -7,12 +7,22 @@ include "types.thrift"
 
 service ModelsService {
     /*
+    * Get list of all models
+    */
+    list<types.Model> getModels ()
+
+    /*
     * Get model with id
     */
-    types.Model getModel ( 1: string modelId, 2: string authToken )
+    types.Model getModel ( 1: string modelId )
 
     /*
     * Get models for path
     */
-    list<types.Model> getModelsForPath ( 1: string pathId, 2: string authToken )
+    list<types.Model> getModelsForPath ( 1: string pathId )
+
+    /*
+    * Create new model
+    */
+    types.Model createModel ( 1: i32 modelId, 2: string srcPath )
 }
