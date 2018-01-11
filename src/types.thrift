@@ -22,3 +22,10 @@ struct Model {
     1: required i32    id;
     2: required string srcPath;
 }
+
+struct Shop {
+    1: required i32 id;
+    2: required string title;
+    3: required string shopUrl;
+    4: required Location shopLocation;
+}
